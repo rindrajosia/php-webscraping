@@ -1,0 +1,14 @@
+{
+    "require": {
+        "guzzlehttp/guzzle": "^7.5",
+        "symfony/dom-crawler": "^5.4",
+        "symfony/css-selector": "^5.4",
+        "behat/mink": "^1.10",
+        "behat/mink-goutte-driver": "^2.0",
+        "chrome-php/chrome": "^1.7",
+        "duncan3dc/dusk": "^1.1"
+    },
+    "require-dev": {
+        "behat/mink": "^1.10"
+    }
+}
