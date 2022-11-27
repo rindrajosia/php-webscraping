@@ -39,7 +39,7 @@ if(!empty(input_cleaner($_POST["fname"]))) {
 
 
   try {
-    echo '<h1>Please wait during fetching process. A link will be displayed once finished</h1>';
+    echo '<h1>If CSV file is ready, Please click on the download link. If not, Please wait during fetching process</h1>';
 
 
     $response = $algolia->post("https://lua9b20g37-3.algolianet.com/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20vanilla%20JavaScript%20(lite)%203.30.0%3Breact-instantsearch%205.2.3%3BJS%20Helper%202.26.1&x-algolia-application-id=LUA9B20G37&x-algolia-api-key=dcc55281ffd7ba6f24c3a9b18288499b",
@@ -103,7 +103,7 @@ if(!empty(input_cleaner($_POST["fname"]))) {
 
     CSV::export($datas, 'coursera');
 
-    echo '<a href="coursera.csv" download>download</a>';
+    echo '<a href="coursera.csv" download>download csv</a>';
 
 
   } catch (ClientException $e) {
